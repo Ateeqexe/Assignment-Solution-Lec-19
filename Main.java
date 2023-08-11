@@ -68,19 +68,6 @@ import java.util.*;
            }
            return result;
        }
-
-       int[]  Sorting(int[] ans, int k) {
-           for (int i = 0; i < k - 1; i++) {
-               for (int j = 0; j < k - 1 - i; j++) {
-                   if (ans[j] > ans[j + 1]) {
-                       int t = ans[j];
-                       ans[j] = ans[j + 1];
-                       ans[j + 1] = t;
-                   }
-               }
-           }
-           return ans ;
-       }
    }
 
     public class Main {
